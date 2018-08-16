@@ -1,0 +1,47 @@
+.jumbotron {
+    background-image: url(../img/burgerbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(17, 60, 151);
+}
+#jumboTitle {
+    text-align: center;
+    background-color: wheat;
+    opacity:0.7;  
+}
+body {
+    background-image: url(../img/fries.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col-lg-5 {
+    border: 1px solid darkcyan;
+    background-color: wheat;
+    opacity:0.7;  
+}
+img {
+    width:10%;
+    height:100%;
+}
+.col-lg-10 {
+    margin-bottom:10px
+}
+h3 {
+    border: 1px solid darkcyan;
+    padding: 5px
+}
+.addbtn:hover {
+    background-color:black;
+    color:wheat
+}
+.devour:hover {
+    background-color:black;
+    color:wheat
+}
+#width {
+    width:65%
+}
+#width2 {
+    width:30%;
+    margin: 10px
+}
