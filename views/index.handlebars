@@ -20,8 +20,8 @@
     <div class="container-fluid col-lg-5">
       <h2 id=jumboTitle>Burgers to snarf!!</h2>
       <ul>
-        {{#each burger_name}}
-          {{#unless devoured}}
+        {{#each Burger}}
+          {{#unless this.dataValues.devoured}}
             {{> burgers/burger-block devoured=true}}
           {{/unless}}
         {{/each}}
@@ -30,8 +30,8 @@
     <div class="container-fluid col-lg-5">
       <h2 id=jumboTitle>Burgers snarffed!!</h2>
       <ul>
-        {{#each burger_name}}
-          {{#if devoured}}
+        {{#each Burger}}
+          {{#if this.dataValues.devoured}}
             {{> burgers/burger-block devoured=false}}
           {{/if}}
         {{/each}}
@@ -52,7 +52,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
+{{!-- <script type="text/javascript">
   $(".devour").on("click", function(event) {
     var id = $(this).data("burger_nameid");
     var newEat = $(this).data("neweat");
@@ -96,4 +96,4 @@
       }
     );
   });
-</script>
+</script> --}}

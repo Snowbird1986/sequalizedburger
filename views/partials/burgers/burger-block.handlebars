@@ -1,7 +1,7 @@
 <li>
-	{{this.id}}. {{this.burger_name}} 
+	{{this.dataValues.id}}. {{this.dataValues.burger_name}} 
 
-	<button class="devour" data-burger_nameid="{{this.id}}" data-newEat="{{devoured}}">
-		{{#if devoured}}Devour!{{else}}Vomit!!{{/if}}
+	<button class="devour" data-burger_nameid="{{this.dataValues.id}}" data-newEat="{{devoured}}">
+		{{#if this.dataValues.devoured}}Vomit!!{{else}}Devour!!{{/if}}
 	</button>
 </li>
